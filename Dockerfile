@@ -9,6 +9,9 @@ RUN apt-get update && \
   rm -rf /var/lib/apt/lists/*
 
 COPY package.json .
+RUN npm install --location=global npm@8.13.2 
+
+
 
 RUN npm install
 
